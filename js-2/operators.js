@@ -72,3 +72,56 @@ console.log(böl2 / 0);
 console.log(-60 / 0);
 
 console.log(0 / 5);
+console.log(0 / -5);
+
+console.log(57 / 9);
+
+const mod1 = 57;
+const mod2 = 9;
+
+console.log(mod1 % mod2);
+console.log(22 % 7);
+
+const benimSayim = 967;
+
+const birlerBas = benimSayim % 10;
+console.log(birlerBas);
+const onlarBas = (benimSayim % 100) / 10;
+console.log(onlarBas);
+const yüzlerBas = benimSayim / 100;
+console.log(yüzlerBas);
+
+console.log(
+  `yüzlerbas: ${Math.trunc(yüzlerBas)}, onlarbas: ${Math.trunc(
+    onlarBas
+  )}, birletbas:${birlerBas}`
+);
+
+const hazirSayi = 56.78888;
+console.log(`hazirSayi of circle ${hazirSayi.toFixed(3)}`);
+console.log(`hazirSayi of circle ${Math.floor(hazirSayi)}`);
+console.log(`hazirSayi of circle ${Math.ceil(hazirSayi)}`);
+console.log(`hazirSayi of circle ${Math.trunc(hazirSayi)}`);
+console.log(`hazirSayi of circle ${Math.round(hazirSayi)}`);
+
+const randomNum = Math.random();
+console.log(randomNum);
+
+const randomNum2 = Math.random() * 10;
+console.log(randomNum2);
+console.log(Math.round(Math.random() * 10));
+
+const üs1 = 2;
+const üs2 = 3;
+
+console.log(üs1 ** üs2);
+
+const pi = 3.14;
+const yariCap = 9;
+
+const alan = pi * yariCap ** 2;
+console.log(alan);
+
+let artır = 6;
+let artırNew = artır++;
+console.log(artırNew);
