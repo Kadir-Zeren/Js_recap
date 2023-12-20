@@ -70,20 +70,57 @@
 // if (result != "") {
 //   console.log(`Your score:${result}`);
 // }
-const n1 = +prompt("num1");
-const n2 = +prompt("num2");
-const n3 = +prompt("num3");
+// const n1 = +prompt("num1");
+// const n2 = +prompt("num2");
+// const n3 = +prompt("num3");
 
-if (n1 > n2) {
-  if (n1 > n3) {
-    console.log("biggest", n1);
-  }
-}
+// if (n1 > n2) {
+//   if (n1 > n3) {
+//     console.log("biggest", n1);
+//   }
+// }
 
-if (n1 > n2 && n1 > n3) {
-  console.log("biggest", n1);
-} else if (n2 > n1 && n2 > n3) {
-  console.log("biggest", n2);
-} else if (n3 > n1 && n3 > n2) {
-  console.log("biggest", n3);
+// if (n1 >= n2 && n1 >= n3) {
+//   console.log("biggest", n1);
+// } else if (n2 >= n1 && n2 >= n3) {
+//   console.log("biggest", n2);
+// } else if (n3 >= n1 && n3 >= n2) {
+//   console.log("biggest", n3);
+// }
+
+// let biggest = n1;
+// if (n2 >= biggest) {
+//   biggest = n2;
+// }
+// if (n3 >= biggest) {
+//   biggest = n3;
+// }
+// console.log(`${biggest} is biggest`);
+
+console.log("***************");
+
+const grade1 = prompt("pleas enter grade");
+
+grade1 >= 50 ? console.log("succeed") : console.log("failed");
+
+const score = grade1 >= 50 ? "passed" : "failed";
+console.log(score);
+
+const score1 = grade1 >= 50 ? "succeed" : "";
+console.log(score1);
+
+const speed = 110;
+
+speed > 120
+  ? console.log("speedy")
+  : speed >= 90
+  ? console.log("normal")
+  : console.log("low speed");
+
+if (speed > 120) {
+  console.log("speddy");
+} else if (speed >= 90) {
+  console.log("normal");
+} else {
+  console.log("low speed");
 }
