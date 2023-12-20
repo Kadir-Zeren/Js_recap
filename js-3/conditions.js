@@ -33,9 +33,33 @@ console.log("conditions");
 const calismaSuresi = prompt("calisma süresi:");
 let maas = prompt("maasini giriniz:");
 if (calismaSuresi >= 10) {
-  maas = maas * 1.1;
+  maas = Math.round(maas * 1.1);
   console.log("zamli maasiniz", maas);
   console.log(`zamli maasiniz ${maas} `);
 } else {
   console.log("uzgunuz maasiniza zam yapamiyioruz", maas);
 }
+
+console.log("güle güle");
+
+if (calismaSuresi >= 10) {
+  maas = Math.round(maas * 1.1);
+  console.log(`zamli maasiniz: ${maas}`);
+}
+console.log("Güle güle");
+
+const grade = prompt("please enter your grade:");
+let result = "";
+if (grade < 40) {
+  result = "FF";
+} else if (grade <= 50) {
+  result = "DD";
+} else if (grade <= 65) {
+  result = "CC";
+} else if (grade <= 89) {
+  result = "BB";
+} else {
+  result = "AA";
+}
+
+console.log(`Your score:${result}`);
